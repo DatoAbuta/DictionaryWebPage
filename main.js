@@ -22,6 +22,9 @@ const noun = document.querySelector('.noun')
 const show = document.querySelector('.nihuiasebe')
 const hide = document.querySelector('.nihuiasebe2')
 const a = document.querySelector('a')
+const line2 = document.querySelector('.line2')
+const line1 = document.querySelector('.line1')
+const line3 = document.querySelector('.line3')
 let darkmode = false;
 let chartuli = false;
 
@@ -49,6 +52,11 @@ toggle.addEventListener('click', () => {
         doma.style.color = "#FFF"
         src.style.color = "#FFF"
         input.style.backgroundColor = "#1F1F1F"
+        input.style.color = "#FFF"
+        line2.style.backgroundColor = "#3A3A3A"
+        line3.style.backgroundColor = "#3A3A3A"
+        line1.style.backgroundColor = "#3A3A3A"
+        h1.style.color = "#FFF"
 
     }else if(darkmode === true){
         darkmode = false
@@ -60,6 +68,11 @@ toggle.addEventListener('click', () => {
         doma.style.color = ""
         src.style.color = ""
         input.style.backgroundColor = ""
+        input.style.color = ""
+        line2.style.backgroundColor = ""
+        line3.style.backgroundColor = ""
+        line1.style.backgroundColor = ""
+        h1.style.color = ""
     }
 })
 
@@ -124,8 +137,6 @@ function showdata() {
 
     let lierti = document.createElement("li");
 
-
-
     input.value = '';
     phonetic.innerHTML = `${data[0].phonetic}`;
     doma.innerHTML = `${data[0].word}`;
@@ -142,6 +153,16 @@ function showdata() {
     a.href = `${data[0].sourceUrls[0]}`
 
     ulori.appendChild(liori);
+    
+    if(darkmode === true){
+        lierti.style.color = "#FFF";
+        liori.style.color = "#FFF";
+
+    } else if(darkmode === false){
+        lierti.style.color = "#2D2D2D";
+        liori.style.color = "#2D2D2D";
+
+    }
 }
 
 soundbtn.addEventListener('click', () => {
@@ -153,3 +174,4 @@ soundbtn.addEventListener('click', () => {
 
     sound.play();
 });
+
