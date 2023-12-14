@@ -87,7 +87,7 @@
         width: 640px;
     }
     .btm{
-        margin-left: -134px;
+        margin-right: 75px;
     }
  .syno{
     color: var(--757575, #757575);
@@ -161,6 +161,9 @@ footer{
 
 .descript{
     margin-right: 350px;
+}
+.emoji{
+    margin-top: 50px;
 }
 }
 
@@ -257,7 +260,7 @@ height: 1205px;
     }
 
     .btm{
-        margin-left: -134px;
+        margin-right: 97px;
     }
  .syno{
     color: var(--757575, #757575);
@@ -324,9 +327,18 @@ h4{
 footer{
     margin-right: 400px;
 }
-
 .descript{
-    margin-right: 400px;
+    margin-right: 330px;
 }
-
+.nodef{
+    font-size: 20px;
+    width: 204px;
+}
+.pal{
+    font-size: 18px;
+    width: 736px;
+}
+.emoji{
+    margin-top: 132px;
+}
 }

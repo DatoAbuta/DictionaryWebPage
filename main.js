@@ -36,6 +36,10 @@ form.addEventListener('submit', async (e) => {
         vali.textContent = "Input Can't Be Empty"
     }else{
         vali.textContent = ""
+
+        descript.textContent = ""
+        src.textContent = ""
+
         await getData()
         showdata();
     }
@@ -175,6 +179,7 @@ function showdata() {
 }
 
 soundbtn.addEventListener('click', () => {
+
     let sound = document.createElement('audio');
 
     sound.src = `${data[0].phonetics[2].audio}`;
@@ -182,5 +187,6 @@ soundbtn.addEventListener('click', () => {
     document.body.appendChild(sound);
 
     sound.play();
+
 });
 
