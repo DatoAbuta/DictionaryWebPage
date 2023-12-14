@@ -61,6 +61,13 @@ h1{
     align-items: center;
 }
 
+.fr img{
+    cursor: pointer;
+}
+.fr img{
+    border-radius: 50%;
+}
+
 input{
     background-image: url(assets/iconoir_search.svg);
     background-repeat: no-repeat;
@@ -83,6 +90,7 @@ input::placeholder{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    padding-left: 10px;
 }
 
 input:focus{
@@ -302,11 +310,13 @@ p{
 footer{
     margin-top: 24px;
     width: 313px;
+    display: flex;
+    flex-direction: column;
 }
 
 .box{
-    width: 183px;
-    height: 152px;
+    width: 143px;
+    height: 102px;
     position: absolute;
     border-radius: 16px;
     background: var(--FFFFFF, #FFF);

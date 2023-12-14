@@ -52,6 +52,10 @@ toggle.addEventListener('click', () => {
         doma.style.color = "#FFF"
         src.style.color = "#FFF"
         input.style.backgroundColor = "#1F1F1F"
+        box.style.backgroundColor = "#1F1F1F"
+        sans.style.color = "#FFF"
+        serif.style.color = "#FFF"
+        mono.style.color = "#FFF"
         input.style.color = "#FFF"
         line2.style.backgroundColor = "#3A3A3A"
         line3.style.backgroundColor = "#3A3A3A"
@@ -73,6 +77,11 @@ toggle.addEventListener('click', () => {
         line3.style.backgroundColor = ""
         line1.style.backgroundColor = ""
         h1.style.color = ""
+        box.style.backgroundColor = ""
+        sans.style.color = ""
+        serif.style.color = ""
+        mono.style.color = ""
+    
     }
 })
 
