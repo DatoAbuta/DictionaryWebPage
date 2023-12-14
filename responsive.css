@@ -151,14 +151,18 @@ h3{
     line-height: 26px;
 }
 
-
-
-
+h4{
+    margin-right: 350px;
 }
 
+footer{
+    margin-right: 350px;
+}
 
-
-
+.descript{
+    margin-right: 350px;
+}
+}
 
 @media (width >= 1440px){
     body{
@@ -311,6 +315,18 @@ footer h2{
 h3{
     font-size: 16px;
     line-height: 26px;
+}
+
+h4{
+    margin-right: 400px;
+}
+
+footer{
+    margin-right: 400px;
+}
+
+.descript{
+    margin-right: 400px;
 }
 
 }
