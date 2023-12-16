@@ -151,19 +151,19 @@ function showdata() {
     let lierti = document.createElement("li");
 
     input.value = '';
-    phonetic.innerHTML = `${data[0].phonetic}`;
-    doma.innerHTML = `${data[0].word}`;
-    synonym.innerHTML = `${data[0].meanings[0].synonyms[0]}`
+    phonetic.innerHTML = data[0].phonetic ?  `${data[0].phonetic}` : "Not Found"
+    doma.innerHTML = data[0].word ?  `${data[0].word}` : "Not Found"
+    synonym.innerHTML = data[0].meanings[0].synonyms[0] ?  `${data[0].meanings[0].synonyms[0]}` : "Not Found"
 
-    lierti.textContent = `${data[0].meanings[0].definitions[0].definition}`;
+    lierti.textContent = data[0].meanings[0].definitions[0].definition ?  `${data[0].meanings[0].definitions[0].definition}` : "Not Found"
     ul.appendChild(lierti);
 
     let liori = document.createElement("li");
 
-    liori.textContent = `${data[0].meanings[1].definitions[0].definition}`
-    descript.textContent = `"${data[0].meanings[1].definitions[0].example}"`
-    src.textContent = `${data[0].sourceUrls[0]}`
-    a.href = `${data[0].sourceUrls[0]}`
+    liori.textContent = data[0].meanings[1].definitions[0].definition ? `${data[0].meanings[1].definitions[0].definition}` : "Not Found"
+    descript.textContent = data[0].meanings[1].definitions[0].example ? `"${data[0].meanings[1].definitions[0].example}"` : "Not Found"
+    src.textContent = data[0].sourceUrls[0] ? `${data[0].sourceUrls[0]}` : "Not Found"
+    a.href = data[0].sourceUrls[0] ? `${data[0].sourceUrls[0]}` : "Not Found"
 
     ulori.appendChild(liori);
     
