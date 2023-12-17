@@ -182,7 +182,7 @@ soundbtn.addEventListener('click', () => {
 
     let sound = document.createElement('audio');
 
-    sound.src = `${data[0].phonetics[2].audio}`;
+    sound.src = `${data[0].phonetics[0].audio}`;
 
     document.body.appendChild(sound);
 
